@@ -3,6 +3,7 @@ var dark = document.getElementById("dark");
 var light = document.getElementById("light");
 var header = document.querySelector(".header");
 var carousel = document.querySelector(".carousel");
+var carouselTitle = document.querySelector(".carousel__title");
 var catagories = document.querySelector(".catagories");
 var catagoriesItemsH5 = document.querySelectorAll(".catagories__items__h5");
 var catagoriesTitleH1 = document.querySelector(".catagories__title__h1");
@@ -23,6 +24,7 @@ document.getElementById("dark").addEventListener("click", function () {
   light.classList.remove("d-none");
   header.style.backgroundColor = "#fdfffc";
   carousel.style.backgroundColor = "#fdfffc";
+  carouselTitle.style.backgroundColor = "#fdfffc";
   carouselH2.style.color = "#222222";
   catagories.style.backgroundColor = "#fdfffc";
   catagoriesTitleH1.style.color = "#222222";
@@ -54,6 +56,7 @@ document.getElementById("light").addEventListener("click", function () {
   dark.classList.remove("d-none");
   header.style.backgroundColor = "#222222";
   carousel.style.backgroundColor = "#222222";
+  carouselTitle.style.backgroundColor = "#222222";
   carouselH2.style.color = "#fdfffc";
   catagories.style.backgroundColor = "#222222";
   catagoriesTitleH1.style.color = "#fdfffc";
