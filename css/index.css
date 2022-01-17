@@ -50,15 +50,15 @@ html {
 /* --------------------------------------MAIN CSS----------------------------- */
 /* HEADER */
 .header {
-  background-color: transparent;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   height: 100px;
-  z-index: 5;
+  z-index: 10;
 }
+
 .famr__nav {
   height: 100px;
 }
@@ -166,6 +166,15 @@ body:focus {
 .navbar__light-logo i {
   font-size: 1.6rem;
   color: var(--heading-color);
+}
+.navbar__dark {
+  position: absolute;
+  top: 0px;
+  right: 112px;
+}
+.navbar__dark-logo i {
+  font-size: 1.6rem;
+  color: var(--button-color);
 }
 .navbar__bars {
   position: relative;
@@ -774,6 +783,14 @@ body:focus {
     right: 100px;
     outline: none;
   }
+  .navbar__dark {
+    position: absolute;
+    top: 0px;
+    right: 85px;
+  }
+  .navbar__search {
+    display: none;
+  }
 }
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -821,6 +838,11 @@ body:focus {
     top: 0;
     right: 150px;
     outline: none;
+  }
+  .navbar__dark {
+    position: absolute;
+    top: 0px;
+    right: 88px;
   }
 }
 @media (min-width: 992px) {
